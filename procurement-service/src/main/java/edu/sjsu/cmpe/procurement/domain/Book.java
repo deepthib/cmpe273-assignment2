@@ -1,13 +1,40 @@
 package edu.sjsu.cmpe.procurement.domain;
 
+import java.net.URL;
+
 
 public class Book {
     private long isbn;
     private String title;
+    private String Category;
+    private URL coverimage;
+    private String status;
 
-    // add more fields here
+    public String getCategory() {
+		return Category;
+	}
 
-    /**
+	public void setCategory(String category) {
+		Category = category;
+	}
+
+	public URL getCoverimage() {
+		return coverimage;
+	}
+
+	public void setCoverimage(URL coverimage) {
+		this.coverimage = coverimage;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	/**
      * @return the isbn
      */
     public long getIsbn() {
